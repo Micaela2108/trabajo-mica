@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Archivo+Narrow:ital@1 & display=swap');
+
+body{
+    font-family: 'Archivo Narrow', sans-serif;
+    margin: 0; 
+    background: linear-gradient(to bottom right,#f8c9f0,#e4aaf3,#c7a5ee);
+}
+
+h1{ font-size: 2.5em;}
+h2 {font-size: 1.50em;}
+h3 {font-size: 1em;}
+p {font-size: 1.25em;}
+li {font-size: 1.25em;}
+ul {list-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0, 0, .8);
+    background-color: #eb67bf;
+    color: #fff;
+    border: 2px solid #c92191;
+}
+
+button:hover{
+    background-color: #b90b7f;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: #f3aae7;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:#010255;
+    font-size: 4em;
+}
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #b90b7f;
+}
