@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @import url('https://fonts.googleapis.com/css2? family= Archivo+Narrow:ital@1 & display=swap');
 
 body{
@@ -18,7 +22,7 @@ li {font-size: 1.25em;}
 ul {list-style: none;}
 
 button{
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 20px;
@@ -114,40 +118,175 @@ text-shadow:2px 2px 10px #c7a5ee;
 
 #catalogo h2{
     margin-top: 0;
+    font-size: 2.5em;
 }
 
 #catalogo .carta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 58px;
+    margin: 20px;
+    border-radius: 15px;
+}
 
+#catalogo button{
+    font-size: 1em;
+    padding: 10px 20px;
 }
 
 .carta:first-child{
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
-    ,url("img/bebe.jpg;")
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    ,url("img/bebe.jpg");
 }
 
 .carta:nth-child(2){
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
-    ,url("img/bebe.jpg;")
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    ,url("img/niños.jpg");
 }
 
 .carta:nth-child(3){
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
-    ,url("img/bebe.jpg;")
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    ,url("img/dama.jpg");
 }
 
 .carta:nth-child(4){
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
-    ,url("img/bebe.jpg;")
+    ,url("img/hombre.jpg");
+}
+
+.cartas2:first-child{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url("img/deportiva.jpg");
+}
+
+.cartas2:nth-child(2){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url("img/vestir.jpg");
+}
+
+.cartas2:nth-child(3){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url("img/urbano.jpg");
+}
+
+#secciones{
+    background-color: #f5d6ea;
+    color: rgb(252, 250, 251);
+    text-shadow:2px 2px 10px #8b53cc;
+    text-align: center;
+}
+
+#secciones .container{
+    padding: 100px 0px;
+}
+
+#secciones p{
+    display: none;
+}
+
+#secciones h2{
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+#secciones .cartas2{
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;   
+    background-position: center center;
+    padding: 58px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#secciones button{
+    font-size: 1em;
+    padding: 10px 20px;
+    text-size-adjust: 4em;
+}
+
+footer{
+background-color: #f5d6ea;
+text-align: center;
+}
+
+
+footer .container{
+    height: 200px;
+}
+
+footer h1{
+    font-size: 1em;
+    text-align: center;
+}
+
+footer h2{
+    font-size: 0.50em;
+    text-align: center;
+}
+
+@media (min-width:720px) {
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+    }
+
+    #ropa h2{
+        margin-top: -80%;
+        text-align: center;
+        align-items: center;
+        margin-left: 28%;
+    }
+
+    #ropa .container{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #ropa .img-container{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url("img/ropa.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 50%;
+    text-align: center;
+    }#ropa .img-container1{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url("img/ropa_1.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 50%;
+    }
+    #ropa .img-container2{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url("img/ropa_2.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 50%;
+    }
+    #ropa .img-container3{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url("img/ropa_3.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 50%;
+    }
 }
