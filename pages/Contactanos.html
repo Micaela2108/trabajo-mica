@@ -12,11 +12,11 @@
         <div class="container">
             <p class="logo">MiLuz</p>
             <nav>
-                <a href="./index.html">Home</a>
-                <a href="#" >Acerca de</a>
-                <a href="#">Servicios</a>
-                <a href="#">Contactanos</a>
-                <a href="#">Politicas de seguridad</a>
+                <a href="../index.html">Home</a>
+                <a href="./AcercaDe.html" >Acerca de</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./Contactanos.html">Contactanos</a>
+                <a href="./Politicas.html">Politicas de seguridad</a>
                 <a href="#">Iniciar sesion</a>
                 <a href="#">Crear cuenta</a>
             </nav>
@@ -30,7 +30,7 @@
             <input type="text" placeholder=" Escriba su apellido aqui" name="apellido"required class="input"> <br><br>
             <input type="mail" placeholder=" Escriba su mail aqui" name="mail"required class="input"> <br><br> 
 
-               <label for="Procedencia" class="etiqueta_p">Procedencia:</label>
+               <label for="Procedencia" class="etiqueta_p">Procedencia:</label><br>
                  <select required id="Procedencia" class="Procedencia" onchange="ocultarLabel()">
                  <option value=""> </option>
                      <option value="America">America</option>
@@ -49,6 +49,19 @@
            
         </form>
     </div>
+    <footer>
+        <div class="container">
+        <h1>Encontranos en:</h1>
+        <ul>
+            <li>
+            <h2>Necochea: Vie a Dom <br> 9:00 a.m - 13:00 p.m <br> 16:30 p.m 20:30 p.m</h2>
+            </li>
+            <li>
+            <h2>Tandil: Lun a Vie <br> 9:00 a.m - 13:00 p.m <br> 16:00 p.m 20:00 p.m</h2>
+            </li>
+        </ul>
+        </div>
+    </footer>
     <script>
         function ocultarLabel(){
             let label = document.querySelector('.etiqueta_p');
